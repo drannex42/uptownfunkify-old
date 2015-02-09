@@ -41,6 +41,7 @@ a:hover {
 .play-btn {
     font-size: 35rem !important;
         transition: all 0.3s;
+    cursor: pointer;
 }
 
 .play-btn:hover {
@@ -56,6 +57,7 @@ a:hover {
 .stop-btn {
     font-size:2rem;
     margin-top: -25px;
+    cursor: pointer;
 }
 
 .top-bar {
