@@ -10,7 +10,7 @@ html {
   font-family: sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
-      background: #ff3333;
+      background: #ff1919;
 }
 
 /**
@@ -24,10 +24,12 @@ body {
 
 a {
     color:white;
+            transition: all 0.3s;
 }
 
 a:hover {
     color: #ccc;
+            transition: all 0.3s;
 }
 
 .title {
@@ -38,6 +40,12 @@ a:hover {
 
 .play-btn {
     font-size: 35rem !important;
+        transition: all 0.3s;
+}
+
+.play-btn:hover {
+    color:#ccc;
+    transition: all 0.3s;
 }
 
 .play-btn-p {
@@ -56,6 +64,7 @@ a:hover {
     position: fixed;
     padding:5px;
     top:0;
+    
 }
 
 .created {
@@ -70,6 +79,7 @@ a:hover {
     text-align: center;
     position:fixed;
     bottom:0;
+    border-top: 1px solid rgb(184, 165, 165);
     
 }
 
