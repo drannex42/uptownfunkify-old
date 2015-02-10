@@ -14,8 +14,8 @@
      data-ad-format="auto"></ins>
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-              <p class="stop-btn" id="stopvideo">stop</p>
+                  </script></p>
+              <p class="stop-btn playSound" id="stopvideo" onclick="myFunction()">stop</i></p>
             <div class='shareaholic-canvas' data-app='share_buttons' data-app-id='15441598'></div>
       </center>
         </div>
@@ -24,6 +24,17 @@
 <div class="bottom-bar"><a target="_blank" href="https://www.youtube.com/watch?v=OPf0YbXqDm0">link to official youtube music video</i></a> - created by <a href="https://mxcleod.com/">macleod sawyer</a> - <a href="https://twitter.com/mxsawyer">@mxsawyer</a></div>
     
 <iframe id="playerid" width="1" height="1" frameborder="0" allowtransparency="true" allowfullscreen></iframe>
+    <script> 
+        $(document).ready(function() { 
+        var obj = document.createElement("audio"); 
+        obj.setAttribute("src", "/sound/stop.wav");
+        $.get(); 
+
+        $(".playSound").click(function() { 
+            obj.play(); 
+        }); 
+    }); 
+    </script> 
 
 <script>
 $("#playvideo").click(function(){
@@ -33,12 +44,10 @@ $("#playerid").attr("src",video);
  });
     
 $("#stopvideo").click(function(){
-       
-var stopvideo = $("#playerid").attr("src");
 $("#playerid").attr("src","https://www.youtube.com/embed/7Ya2U8XN_Zw");
 $("#playerid").attr("src",stopvideo);
 document.getElementsByTagName("body")[0].setAttribute("class", "body2");  
-document.getElementById("stopvideo").innerHTML = "stop <br><small><small>(i heard if you click the play button again the background will get funkier - and waaayy faster)</small></small>";
+    document.getElementById("stopvideo").innerHTML = "stop <br><small><small>(i heard if you click play again the background will be even funkier and change even faster)</small></small>";
  });
     
 $("#playvideo").click(function(){
@@ -46,3 +55,8 @@ document.getElementsByTagName("body")[0].setAttribute("onclick", "disco()");
 document.getElementsByTagName("body")[0].setAttribute("class", "body3");  
  });
 </script>
+
+
+
+
+
