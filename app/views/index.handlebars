@@ -36,4 +36,20 @@ $("#stopvideo").click(function(){
 $("#playerid").attr("src","https://www.youtube.com/embed/7Ya2U8XN_Zw");
 $("#playerid").attr("src",stopvideo);
  });
+    
+$("#playvideo").click(function(){
+var discoeffect = $("#body").attr("onclick");
+$("#playerid").attr("onload","disco()");
+$("#playerid").attr("onload",discoeffect);
+ });
+    
+$("#stopvideo").click(function(){
+var discoeffect = $("#body").attr("onclick");
+$("#body").attr("onload","nodisco()");
+$("#body").attr("onload",discoeffect);
+ });
+
+
 </script>
+
+
