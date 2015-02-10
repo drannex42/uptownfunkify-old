@@ -15,7 +15,7 @@
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-              <p class="stop-btn" id="stopvideo">stop</i></p>
+              <p class="stop-btn" id="stopvideo">stop</p>
             <div class='shareaholic-canvas' data-app='share_buttons' data-app-id='15441598'></div>
       </center>
         </div>
@@ -33,23 +33,16 @@ $("#playerid").attr("src",video);
  });
     
 $("#stopvideo").click(function(){
+       
+var stopvideo = $("#playerid").attr("src");
 $("#playerid").attr("src","https://www.youtube.com/embed/7Ya2U8XN_Zw");
 $("#playerid").attr("src",stopvideo);
+document.getElementsByTagName("body")[0].setAttribute("class", "body2");  
+document.getElementById("stopvideo").innerHTML = "stop <br><small><small>(i heard if you click the play button again the background will get funkier - and waaayy faster)</small></small>";
  });
     
 $("#playvideo").click(function(){
-var discoeffect = $("#body").attr("onclick");
-$("#playerid").attr("onload","disco()");
-$("#playerid").attr("onload",discoeffect);
+document.getElementsByTagName("body")[0].setAttribute("onclick", "disco()");  
+document.getElementsByTagName("body")[0].setAttribute("class", "body3");  
  });
-    
-$("#stopvideo").click(function(){
-var discoeffect = $("#body").attr("onclick");
-$("#body").attr("onload","nodisco()");
-$("#body").attr("onload",discoeffect);
- });
-
-
 </script>
-
-

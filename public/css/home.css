@@ -10,6 +10,7 @@ html {
   font-family: sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
+    overflow: hidden;
 }
 
 /**
@@ -20,6 +21,14 @@ body {
   margin: 0;
         color:white;
     background: #551A8B; 
+}
+
+.body2 {
+    background: #551A8B !important;
+}
+
+.body3 {
+    background: !important;
 }
 
 a {
