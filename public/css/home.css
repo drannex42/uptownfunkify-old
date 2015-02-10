@@ -70,12 +70,12 @@ a:hover {
 }
 
 .top-bar {
-    width:100%;
-    text-align: right;
-    position: fixed;
-    padding:5px;
-    top:0;
-    
+  width: 98%;
+  text-align: right;
+  position: fixed;
+  padding: 5px;
+  top: 0;
+  font-size: 10px;
 }
 
 .created {
@@ -84,7 +84,7 @@ a:hover {
 
 
 .bottom-bar {
-    background:red;
+
     padding:5px;
     width:100%;
     text-align: center;

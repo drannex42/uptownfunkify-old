@@ -1,30 +1,33 @@
-  <div class="container">
+<div class="top-bar">tip: if you click around the page the background will get uptown funkier (-:</div>  
+
+<div class="container">
     <div class="row">
       <div class="twelve columns title">
-          <center>
         <h4>UptownFunkify it!</h4>
-              <p class="play-btn-p" id="playvideo"><i class="fa fa-play-circle-o play-btn"></i>
+              <p class="play-btn-p" id="playvideo" onclick="refreshIframe();"><i class="fa fa-play-circle-o play-btn"></i>
               
               <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Bottom -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-7004039348107787"
-     data-ad-slot="9984523356"
-     data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-                  </script></p>
-              <p class="stop-btn playSound" id="stopvideo" onclick="myFunction()">stop</i></p>
+                <!-- Bottom -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-7004039348107787"
+                     data-ad-slot="9984523356"
+                     data-ad-format="auto"></ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+              
+            </p>
+              <p class="stop-btn playSound" id="stopvideo" onclick="stopIframe();">stop</i></p>
             <div class='shareaholic-canvas' data-app='share_buttons' data-app-id='15441598'></div>
       </center>
         </div>
     </div>
   </div>
-<div class="bottom-bar"><a target="_blank" href="https://www.youtube.com/watch?v=OPf0YbXqDm0">link to official youtube music video</i></a> - created by <a href="https://mxcleod.com/">macleod sawyer</a> - <a href="https://twitter.com/mxsawyer">@mxsawyer</a></div>
+<div class="bottom-bar" onload="disco()"><a target="_blank" href="https://www.youtube.com/watch?v=OPf0YbXqDm0">link to official youtube music video</i></a> - created by <a href="https://macleodsawyer.com/">macleod sawyer</a> - follow me: <a href="https://twitter.com/mxsawyer">twitter</a> - <a href="https://mxcleod.com/">tumblr</a></div>
     
-<iframe id="playerid" width="1" height="1" frameborder="0" allowtransparency="true" allowfullscreen></iframe>
-    <script> 
+
+<script> 
         $(document).ready(function() { 
         var obj = document.createElement("audio"); 
         obj.setAttribute("src", "/sound/stop.wav");
@@ -36,18 +39,20 @@
     }); 
     </script> 
 
+<iframe id="playerid" name="Right" width="1" height="1" frameborder="0" allowtransparency="true" allowfullscreen></iframe>
+
 <script>
 $("#playvideo").click(function(){
 var video = $("#playerid").attr("src");
-$("#playerid").attr("src","https://www.youtube.com/embed/7Ya2U8XN_Zw?autoplay=1&loop=1");
+$("#playerid").attr("src","https://www.youtube.com/embed/7Ya2U8XN_Zw?autoplay=1&loop=1&playlist=7Ya2U8XN_Zw");
 $("#playerid").attr("src",video);
  });
     
 $("#stopvideo").click(function(){
-$("#playerid").attr("src","https://www.youtube.com/embed/7Ya2U8XN_Zw");
-$("#playerid").attr("src",stopvideo);
+// $("#playerid").attr("src","https://www.youtube.com/embed/7Ya2U8XN_Zw");
+// $("#playerid").attr("src",stopvideo);
 document.getElementsByTagName("body")[0].setAttribute("class", "body2");  
-    document.getElementById("stopvideo").innerHTML = "stop <br><small><small>(i heard if you click play again the background will be even funkier and change even faster)</small></small>";
+    document.getElementById("stopvideo").innerHTML = "stop";
  });
     
 $("#playvideo").click(function(){
@@ -55,6 +60,21 @@ document.getElementsByTagName("body")[0].setAttribute("onclick", "disco()");
 document.getElementsByTagName("body")[0].setAttribute("class", "body3");  
  });
 </script>
+<script>
+function refreshIframe() {
+    var ifr = document.getElementsByName('Right')[0];
+    ifr.src = ("https://www.youtube.com/embed/7Ya2U8XN_Zw?autoplay=1&loop=1&playlist=7Ya2U8XN_Zw");
+}
+    
+function stopIframe() {
+    var ifr = document.getElementsByName('Right')[0];
+    ifr.src = ("null");
+}
+    
+</script>
+
+
+
 
 
 
