@@ -10,7 +10,30 @@ html {
   font-family: sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
-    overflow: hidden;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+form {
+      font-size: 1.2rem;
+  /* display: flex; */
+  text-align: center;
+    display: inline-block;
+  text-align: center;
+}
+
+
+form > table {
+      margin-bottom: .5rem;
+}
+
+th, td {
+  text-align: center;
+  border-style: none; 
+}
+form > td {
+    color: black;
+
 }
 
 /**
@@ -84,7 +107,7 @@ a:hover {
 
 
 .bottom-bar {
-
+      background: #551A8B;
     padding:5px;
     width:100%;
     text-align: center;
